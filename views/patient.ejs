@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./partials/head') %>
+  <title>Patient Queue Number</title>
+</head>
+<body>
+  <h1>Patient Queue Number</h1>
+  <p>Name: <%= patient.name %></p>
+  <p>Queue Number: <%= QueueNumber %>/<%= patient.age %></p>
+  <a href="/queue">View Full Queue</a>
+  <a href="/">Add more</a>
+
+  <%- include('./partials/scripts') %>
+</body>
+</html>

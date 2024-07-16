@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./partials/head') %>
+  <title>Queue</title>
+</head>
+<body>
+  <h1>Queue</h1>
+  <ul>
+    <% patients.forEach((patient, index) => { %>
+      <li><%= index+1 %>: <%= patient.name %>&nbsp;<a href="/complete/<%= patient._id %>">Completed</a></li>
+    <% }) %>
+  </ul>
+  <%- include('./partials/scripts') %>
+  <a href="/">Add more</a>
+  <a href="/viewall">View all</a>
+</body>
+</html>

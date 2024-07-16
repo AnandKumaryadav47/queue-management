@@ -1,0 +1,6 @@
+node run dev
+
+
+add deletedPatient.js file in models
+add deletedPatients.ejs file in views
+in index.js add if - else in try 
